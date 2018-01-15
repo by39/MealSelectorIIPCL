@@ -10,6 +10,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.Support.V7.App;
+using Android.Gms.Ads;
 
 namespace MealSelectorII.Droid
 {
@@ -26,6 +27,10 @@ namespace MealSelectorII.Droid
             var toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.advanecd_toolbar);
             SetSupportActionBar(toolbar);
             SupportActionBar.Title = "Advanced";
+
+            AdView myAd = FindViewById<AdView>(Resource.Id.myAd);
+            AdRequest adReq = new AdRequest.Builder().Build();
+            myAd.LoadAd(adReq);
         }
 
         public override bool OnCreateOptionsMenu(IMenu menu)
