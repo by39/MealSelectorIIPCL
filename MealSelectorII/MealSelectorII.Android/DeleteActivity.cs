@@ -50,7 +50,7 @@ namespace MealSelectorII.Droid
 
             meal_list.ItemClick += meal_listItemClick;
 
-           
+            //meal_list
         }
         
         public void meal_listItemClick(object sender, AdapterView.ItemClickEventArgs e)
@@ -73,15 +73,14 @@ namespace MealSelectorII.Droid
             {
                 var data_Del = table.Where(x => x.Food == food).FirstOrDefault();
                 dbM.Delete(data_Del);
-                //reload the list
-                Intent intent = new Intent(this, typeof(DeleteActivity));
-                this.StartActivity(intent);
+                
+                refreshList();
+               
             });
             message.SetNegativeButton("NO", (c, ev) => 
             {
-                //reload the list
-                Intent intent = new Intent(this, typeof(DeleteActivity));
-                this.StartActivity(intent);
+               
+                refreshList();
             });
             message.Show();
         }
@@ -106,16 +105,23 @@ namespace MealSelectorII.Droid
         public void refreshList()
         {
             mealList.Clear();
+            
             string dbPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "Mealdb.db3");
             var dbM = new SQLiteConnection(dbPath);
             dbM.CreateTable<Meal>();
             var table = dbM.Table<Meal>();
+
+            ListView meal_list = FindViewById<ListView>(Resource.Id.meal_List);
 
             foreach (var item in table)
             {
                 Meal myMeal = new Meal(item.Food);
                 mealList.Add(myMeal.Food);
             }
+
+            ArrayAdapter<string> adapter;
+            adapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleListItem1, mealList);
+            meal_list.Adapter = adapter;
         }
     }
 }
