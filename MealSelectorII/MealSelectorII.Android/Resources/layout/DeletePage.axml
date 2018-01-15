@@ -1,19 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:minWidth="25px"
     android:minHeight="25px">
-  
-  <android.support.v7.widget.Toolbar
-      android:id="@+id/delete_toolbar"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:background="?attr/colorPrimary"
-      android:elevation="4dp"
-      android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
-  
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/delete_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/myAd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adUnitId="ca-app-pub-3940256099942544/2934735716"
+        ads:adSize="BANNER"
+        android:layout_gravity="top" />
     <ListView
         android:minWidth="25px"
         android:minHeight="25px"

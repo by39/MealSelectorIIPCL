@@ -12,6 +12,7 @@ using Android.Widget;
 using SQLite;
 using System.IO;
 using Android.Support.V7.App;
+using Android.Gms.Ads;
 
 namespace MealSelectorII.Droid
 {
@@ -26,6 +27,10 @@ namespace MealSelectorII.Droid
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.DeletePage);
+
+            AdView myAd = FindViewById<AdView>(Resource.Id.myAd);
+            AdRequest adReq = new AdRequest.Builder().Build();
+            myAd.LoadAd(adReq);
 
             //Set the toolbar
             var toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.delete_toolbar);

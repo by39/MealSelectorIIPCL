@@ -10,6 +10,7 @@ using SQLite;
 using System.Collections.Generic;
 using System.IO;
 using Android.Support.V7.App;
+using Android.Gms.Ads;
 
 
 namespace MealSelectorII.Droid
@@ -45,10 +46,9 @@ namespace MealSelectorII.Droid
             TextView showFeed = FindViewById<TextView>(Resource.Id.show_feed);
             Button getButton = FindViewById<Button>(Resource.Id.get_button);
 
-            //Button adButton = FindViewById<Button>(Resource.Id.adButton);
-            //AdView myAd = FindViewById<AdView>(Resource.Id.myAd);
-            //AdRequest adReq = new AdRequest.Builder().Build();
-            //myAd.LoadAd(adReq);
+            AdView myAd = FindViewById<AdView>(Resource.Id.myAd);
+            AdRequest adReq = new AdRequest.Builder().Build();
+            myAd.LoadAd(adReq);
 
 
 

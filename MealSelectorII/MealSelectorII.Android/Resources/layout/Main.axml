@@ -14,14 +14,13 @@
         android:background="?attr/colorPrimary"
         android:elevation="4dp"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
-  
-    <!--<com.google.android.gms.ads.Adview
+    <com.google.android.gms.ads.AdView
         android:id="@+id/myAd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         ads:adUnitId="ca-app-pub-3940256099942544/2934735716"
-        android:layout_marginRight="266.0dp" />-->
-  
+        ads:adSize="BANNER"
+        android:layout_gravity="top" />
     <LinearLayout
         android:orientation="horizontal"
         android:minWidth="25px"
