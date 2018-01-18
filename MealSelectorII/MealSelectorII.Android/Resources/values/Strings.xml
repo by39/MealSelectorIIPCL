@@ -2,4 +2,25 @@
 <resources>
 	<string name="hello">Hello World, Click Me!</string>
 	<string name="app_name">MealSelectorII.Android</string>
+
+  <string-array name="dropdown_arrays">
+    <item>Select sort of your meal...</item>
+    <item>Vege</item>
+    <item>Meat</item>
+  </string-array>
+
+  <string-array name="feed_dropdown_arrays">
+    <item>Select sort of your meal...</item>
+    <item>All</item>
+    <item>Vege</item>
+    <item>Meat</item>
+  </string-array>
+  
+  <string-array name="del_dropdown_arrays">
+    <item>All</item>
+    <item>Vege</item>
+    <item>Meat</item>
+  </string-array>
+
+
 </resources>

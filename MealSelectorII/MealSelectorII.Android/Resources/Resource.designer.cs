@@ -77,6 +77,28 @@ namespace MealSelectorII.Droid
 			}
 		}
 		
+		public partial class Array
+		{
+			
+			// aapt resource value: 0x7f0c0002
+			public const int del_dropdown_arrays = 2131492866;
+			
+			// aapt resource value: 0x7f0c0000
+			public const int dropdown_arrays = 2131492864;
+			
+			// aapt resource value: 0x7f0c0001
+			public const int feed_dropdown_arrays = 2131492865;
+			
+			static Array()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Array()
+			{
+			}
+		}
+		
 		public partial class Attribute
 		{
 			
@@ -1942,8 +1964,8 @@ namespace MealSelectorII.Droid
 			// aapt resource value: 0x7f0b0030
 			public const int SYM = 2131427376;
 			
-			// aapt resource value: 0x7f0b007d
-			public const int action0 = 2131427453;
+			// aapt resource value: 0x7f0b0089
+			public const int action0 = 2131427465;
 			
 			// aapt resource value: 0x7f0b005e
 			public const int action_bar = 2131427422;
@@ -1966,17 +1988,17 @@ namespace MealSelectorII.Droid
 			// aapt resource value: 0x7f0b003c
 			public const int action_bar_title = 2131427388;
 			
-			// aapt resource value: 0x7f0b007a
-			public const int action_container = 2131427450;
+			// aapt resource value: 0x7f0b0086
+			public const int action_container = 2131427462;
 			
 			// aapt resource value: 0x7f0b005f
 			public const int action_context_bar = 2131427423;
 			
-			// aapt resource value: 0x7f0b0081
-			public const int action_divider = 2131427457;
+			// aapt resource value: 0x7f0b008d
+			public const int action_divider = 2131427469;
 			
-			// aapt resource value: 0x7f0b007b
-			public const int action_image = 2131427451;
+			// aapt resource value: 0x7f0b0087
+			public const int action_image = 2131427463;
 			
 			// aapt resource value: 0x7f0b0002
 			public const int action_menu_divider = 2131427330;
@@ -1993,11 +2015,11 @@ namespace MealSelectorII.Droid
 			// aapt resource value: 0x7f0b003e
 			public const int action_mode_close_button = 2131427390;
 			
-			// aapt resource value: 0x7f0b007c
-			public const int action_text = 2131427452;
+			// aapt resource value: 0x7f0b0088
+			public const int action_text = 2131427464;
 			
-			// aapt resource value: 0x7f0b008a
-			public const int actions = 2131427466;
+			// aapt resource value: 0x7f0b0096
+			public const int actions = 2131427478;
 			
 			// aapt resource value: 0x7f0b003f
 			public const int activity_chooser_view_content = 2131427391;
@@ -2005,17 +2027,20 @@ namespace MealSelectorII.Droid
 			// aapt resource value: 0x7f0b0025
 			public const int add = 2131427365;
 			
-			// aapt resource value: 0x7f0b0074
-			public const int add_button = 2131427444;
-			
 			// aapt resource value: 0x7f0b0073
-			public const int add_text = 2131427443;
+			public const int add_button = 2131427443;
+			
+			// aapt resource value: 0x7f0b0082
+			public const int add_text = 2131427458;
 			
 			// aapt resource value: 0x7f0b000e
 			public const int adjust_height = 2131427342;
 			
 			// aapt resource value: 0x7f0b000f
 			public const int adjust_width = 2131427343;
+			
+			// aapt resource value: 0x7f0b007f
+			public const int adv_meal_list = 2131427455;
 			
 			// aapt resource value: 0x7f0b006d
 			public const int advanecd_toolbar = 2131427437;
@@ -2044,14 +2069,14 @@ namespace MealSelectorII.Droid
 			// aapt resource value: 0x7f0b0045
 			public const int buttonPanel = 2131427397;
 			
-			// aapt resource value: 0x7f0b007e
-			public const int cancel_action = 2131427454;
+			// aapt resource value: 0x7f0b008a
+			public const int cancel_action = 2131427466;
 			
 			// aapt resource value: 0x7f0b0055
 			public const int checkbox = 2131427413;
 			
-			// aapt resource value: 0x7f0b0086
-			public const int chronometer = 2131427462;
+			// aapt resource value: 0x7f0b0092
+			public const int chronometer = 2131427474;
 			
 			// aapt resource value: 0x7f0b0032
 			public const int collapseActionView = 2131427378;
@@ -2074,11 +2099,17 @@ namespace MealSelectorII.Droid
 			// aapt resource value: 0x7f0b0042
 			public const int default_activity_button = 2131427394;
 			
-			// aapt resource value: 0x7f0b0076
-			public const int del_button = 2131427446;
+			// aapt resource value: 0x7f0b0083
+			public const int del_button = 2131427459;
 			
-			// aapt resource value: 0x7f0b006f
-			public const int delete_toolbar = 2131427439;
+			// aapt resource value: 0x7f0b007e
+			public const int del_spinner = 2131427454;
+			
+			// aapt resource value: 0x7f0b007c
+			public const int delete_button = 2131427452;
+			
+			// aapt resource value: 0x7f0b007d
+			public const int delete_toolbar = 2131427453;
 			
 			// aapt resource value: 0x7f0b001a
 			public const int disableHome = 2131427354;
@@ -2089,8 +2120,8 @@ namespace MealSelectorII.Droid
 			// aapt resource value: 0x7f0b0029
 			public const int end = 2131427369;
 			
-			// aapt resource value: 0x7f0b008c
-			public const int end_padder = 2131427468;
+			// aapt resource value: 0x7f0b0098
+			public const int end_padder = 2131427480;
 			
 			// aapt resource value: 0x7f0b0040
 			public const int expand_activities_button = 2131427392;
@@ -2098,11 +2129,23 @@ namespace MealSelectorII.Droid
 			// aapt resource value: 0x7f0b0054
 			public const int expanded_menu = 2131427412;
 			
+			// aapt resource value: 0x7f0b0077
+			public const int feedSelect = 2131427447;
+			
+			// aapt resource value: 0x7f0b0079
+			public const int feed_button = 2131427449;
+			
+			// aapt resource value: 0x7f0b007a
+			public const int feed_result = 2131427450;
+			
+			// aapt resource value: 0x7f0b0071
+			public const int food_text = 2131427441;
+			
 			// aapt resource value: 0x7f0b003a
 			public const int forever = 2131427386;
 			
-			// aapt resource value: 0x7f0b0079
-			public const int get_button = 2131427449;
+			// aapt resource value: 0x7f0b0085
+			public const int get_button = 2131427461;
 			
 			// aapt resource value: 0x7f0b0004
 			public const int home = 2131427332;
@@ -2113,8 +2156,8 @@ namespace MealSelectorII.Droid
 			// aapt resource value: 0x7f0b0044
 			public const int icon = 2131427396;
 			
-			// aapt resource value: 0x7f0b008b
-			public const int icon_group = 2131427467;
+			// aapt resource value: 0x7f0b0097
+			public const int icon_group = 2131427479;
 			
 			// aapt resource value: 0x7f0b0011
 			public const int icon_only = 2131427345;
@@ -2125,8 +2168,8 @@ namespace MealSelectorII.Droid
 			// aapt resource value: 0x7f0b0041
 			public const int image = 2131427393;
 			
-			// aapt resource value: 0x7f0b0087
-			public const int info = 2131427463;
+			// aapt resource value: 0x7f0b0093
+			public const int info = 2131427475;
 			
 			// aapt resource value: 0x7f0b003b
 			public const int italic = 2131427387;
@@ -2140,14 +2183,26 @@ namespace MealSelectorII.Droid
 			// aapt resource value: 0x7f0b000a
 			public const int line3 = 2131427338;
 			
-			// aapt resource value: 0x7f0b0072
-			public const int linearLayout1 = 2131427442;
+			// aapt resource value: 0x7f0b006f
+			public const int linearLayout1 = 2131427439;
+			
+			// aapt resource value: 0x7f0b0070
+			public const int linearLayout2 = 2131427440;
+			
+			// aapt resource value: 0x7f0b0074
+			public const int linearLayout3 = 2131427444;
 			
 			// aapt resource value: 0x7f0b0075
-			public const int linearLayout2 = 2131427445;
+			public const int linearLayout4 = 2131427445;
 			
-			// aapt resource value: 0x7f0b0077
-			public const int linearLayout3 = 2131427447;
+			// aapt resource value: 0x7f0b0076
+			public const int linearLayout5 = 2131427446;
+			
+			// aapt resource value: 0x7f0b0078
+			public const int linearLayout6 = 2131427448;
+			
+			// aapt resource value: 0x7f0b007b
+			public const int linearLayout7 = 2131427451;
 			
 			// aapt resource value: 0x7f0b0017
 			public const int listMode = 2131427351;
@@ -2155,20 +2210,20 @@ namespace MealSelectorII.Droid
 			// aapt resource value: 0x7f0b0043
 			public const int list_item = 2131427395;
 			
-			// aapt resource value: 0x7f0b0070
-			public const int meal_List = 2131427440;
-			
 			// aapt resource value: 0x7f0b0080
-			public const int media_actions = 2131427456;
+			public const int meal_List = 2131427456;
 			
-			// aapt resource value: 0x7f0b008e
-			public const int menu_advn = 2131427470;
+			// aapt resource value: 0x7f0b008c
+			public const int media_actions = 2131427468;
 			
-			// aapt resource value: 0x7f0b008f
-			public const int menu_back = 2131427471;
+			// aapt resource value: 0x7f0b009b
+			public const int menu_advn = 2131427483;
 			
-			// aapt resource value: 0x7f0b008d
-			public const int message = 2131427469;
+			// aapt resource value: 0x7f0b009a
+			public const int menu_back = 2131427482;
+			
+			// aapt resource value: 0x7f0b0099
+			public const int message = 2131427481;
 			
 			// aapt resource value: 0x7f0b002a
 			public const int middle = 2131427370;
@@ -2188,14 +2243,14 @@ namespace MealSelectorII.Droid
 			// aapt resource value: 0x7f0b0018
 			public const int normal = 2131427352;
 			
-			// aapt resource value: 0x7f0b0089
-			public const int notification_background = 2131427465;
+			// aapt resource value: 0x7f0b0095
+			public const int notification_background = 2131427477;
 			
-			// aapt resource value: 0x7f0b0083
-			public const int notification_main_column = 2131427459;
+			// aapt resource value: 0x7f0b008f
+			public const int notification_main_column = 2131427471;
 			
-			// aapt resource value: 0x7f0b0082
-			public const int notification_main_column_container = 2131427458;
+			// aapt resource value: 0x7f0b008e
+			public const int notification_main_column_container = 2131427470;
 			
 			// aapt resource value: 0x7f0b0047
 			public const int parentPanel = 2131427399;
@@ -2209,11 +2264,11 @@ namespace MealSelectorII.Droid
 			// aapt resource value: 0x7f0b0057
 			public const int radio = 2131427415;
 			
-			// aapt resource value: 0x7f0b0088
-			public const int right_icon = 2131427464;
+			// aapt resource value: 0x7f0b0094
+			public const int right_icon = 2131427476;
 			
-			// aapt resource value: 0x7f0b0084
-			public const int right_side = 2131427460;
+			// aapt resource value: 0x7f0b0090
+			public const int right_side = 2131427472;
 			
 			// aapt resource value: 0x7f0b0021
 			public const int screen = 2131427361;
@@ -2257,6 +2312,9 @@ namespace MealSelectorII.Droid
 			// aapt resource value: 0x7f0b006b
 			public const int search_voice_btn = 2131427435;
 			
+			// aapt resource value: 0x7f0b0072
+			public const int select = 2131427442;
+			
 			// aapt resource value: 0x7f0b006c
 			public const int select_dialog_listview = 2131427436;
 			
@@ -2272,8 +2330,8 @@ namespace MealSelectorII.Droid
 			// aapt resource value: 0x7f0b001e
 			public const int showTitle = 2131427358;
 			
-			// aapt resource value: 0x7f0b0078
-			public const int show_feed = 2131427448;
+			// aapt resource value: 0x7f0b0084
+			public const int show_feed = 2131427460;
 			
 			// aapt resource value: 0x7f0b0046
 			public const int spacer = 2131427398;
@@ -2293,8 +2351,8 @@ namespace MealSelectorII.Droid
 			// aapt resource value: 0x7f0b0012
 			public const int standard = 2131427346;
 			
-			// aapt resource value: 0x7f0b007f
-			public const int status_bar_latest_event_content = 2131427455;
+			// aapt resource value: 0x7f0b008b
+			public const int status_bar_latest_event_content = 2131427467;
 			
 			// aapt resource value: 0x7f0b0058
 			public const int submenuarrow = 2131427416;
@@ -2317,8 +2375,8 @@ namespace MealSelectorII.Droid
 			// aapt resource value: 0x7f0b004b
 			public const int textSpacerNoTitle = 2131427403;
 			
-			// aapt resource value: 0x7f0b0085
-			public const int time = 2131427461;
+			// aapt resource value: 0x7f0b0091
+			public const int time = 2131427473;
 			
 			// aapt resource value: 0x7f0b000d
 			public const int title = 2131427341;
@@ -2329,8 +2387,8 @@ namespace MealSelectorII.Droid
 			// aapt resource value: 0x7f0b0051
 			public const int title_template = 2131427409;
 			
-			// aapt resource value: 0x7f0b0071
-			public const int toolbar = 2131427441;
+			// aapt resource value: 0x7f0b0081
+			public const int toolbar = 2131427457;
 			
 			// aapt resource value: 0x7f0b0037
 			public const int top = 2131427383;
@@ -2485,70 +2543,73 @@ namespace MealSelectorII.Droid
 			public const int AdvancePage = 2130903067;
 			
 			// aapt resource value: 0x7f03001c
-			public const int DeletePage = 2130903068;
+			public const int AdveDelete = 2130903068;
 			
 			// aapt resource value: 0x7f03001d
-			public const int Main = 2130903069;
+			public const int DeletePage = 2130903069;
 			
 			// aapt resource value: 0x7f03001e
-			public const int notification_action = 2130903070;
+			public const int Main = 2130903070;
 			
 			// aapt resource value: 0x7f03001f
-			public const int notification_action_tombstone = 2130903071;
+			public const int notification_action = 2130903071;
 			
 			// aapt resource value: 0x7f030020
-			public const int notification_media_action = 2130903072;
+			public const int notification_action_tombstone = 2130903072;
 			
 			// aapt resource value: 0x7f030021
-			public const int notification_media_cancel_action = 2130903073;
+			public const int notification_media_action = 2130903073;
 			
 			// aapt resource value: 0x7f030022
-			public const int notification_template_big_media = 2130903074;
+			public const int notification_media_cancel_action = 2130903074;
 			
 			// aapt resource value: 0x7f030023
-			public const int notification_template_big_media_custom = 2130903075;
+			public const int notification_template_big_media = 2130903075;
 			
 			// aapt resource value: 0x7f030024
-			public const int notification_template_big_media_narrow = 2130903076;
+			public const int notification_template_big_media_custom = 2130903076;
 			
 			// aapt resource value: 0x7f030025
-			public const int notification_template_big_media_narrow_custom = 2130903077;
+			public const int notification_template_big_media_narrow = 2130903077;
 			
 			// aapt resource value: 0x7f030026
-			public const int notification_template_custom_big = 2130903078;
+			public const int notification_template_big_media_narrow_custom = 2130903078;
 			
 			// aapt resource value: 0x7f030027
-			public const int notification_template_icon_group = 2130903079;
+			public const int notification_template_custom_big = 2130903079;
 			
 			// aapt resource value: 0x7f030028
-			public const int notification_template_lines_media = 2130903080;
+			public const int notification_template_icon_group = 2130903080;
 			
 			// aapt resource value: 0x7f030029
-			public const int notification_template_media = 2130903081;
+			public const int notification_template_lines_media = 2130903081;
 			
 			// aapt resource value: 0x7f03002a
-			public const int notification_template_media_custom = 2130903082;
+			public const int notification_template_media = 2130903082;
 			
 			// aapt resource value: 0x7f03002b
-			public const int notification_template_part_chronometer = 2130903083;
+			public const int notification_template_media_custom = 2130903083;
 			
 			// aapt resource value: 0x7f03002c
-			public const int notification_template_part_time = 2130903084;
+			public const int notification_template_part_chronometer = 2130903084;
 			
 			// aapt resource value: 0x7f03002d
-			public const int select_dialog_item_material = 2130903085;
+			public const int notification_template_part_time = 2130903085;
 			
 			// aapt resource value: 0x7f03002e
-			public const int select_dialog_multichoice_material = 2130903086;
+			public const int select_dialog_item_material = 2130903086;
 			
 			// aapt resource value: 0x7f03002f
-			public const int select_dialog_singlechoice_material = 2130903087;
+			public const int select_dialog_multichoice_material = 2130903087;
 			
 			// aapt resource value: 0x7f030030
-			public const int support_simple_spinner_dropdown_item = 2130903088;
+			public const int select_dialog_singlechoice_material = 2130903088;
 			
 			// aapt resource value: 0x7f030031
-			public const int tooltip = 2130903089;
+			public const int support_simple_spinner_dropdown_item = 2130903089;
+			
+			// aapt resource value: 0x7f030032
+			public const int tooltip = 2130903090;
 			
 			static Layout()
 			{
@@ -2563,14 +2624,17 @@ namespace MealSelectorII.Droid
 		public partial class Menu
 		{
 			
-			// aapt resource value: 0x7f0c0000
-			public const int toolbar_advance = 2131492864;
+			// aapt resource value: 0x7f0d0000
+			public const int adv_delete = 2131558400;
 			
-			// aapt resource value: 0x7f0c0001
-			public const int toolbar_back = 2131492865;
+			// aapt resource value: 0x7f0d0001
+			public const int toolbar_advance = 2131558401;
 			
-			// aapt resource value: 0x7f0c0002
-			public const int toolbar_menu = 2131492866;
+			// aapt resource value: 0x7f0d0002
+			public const int toolbar_back = 2131558402;
+			
+			// aapt resource value: 0x7f0d0003
+			public const int toolbar_menu = 2131558403;
 			
 			static Menu()
 			{
