@@ -19,6 +19,9 @@ namespace MealSelectorII.Droid
     [Activity(Label = "AdvanceActivity")]
     public class AdvanceActivity : AppCompatActivity
     {
+
+        List<AdvanceMeal> myAdvMealList = new List<AdvanceMeal>();
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -31,7 +34,7 @@ namespace MealSelectorII.Droid
             var dbM = new SQLiteConnection(dbPath);
             dbM.CreateTable<AdvanceMeal>();
 
-            List<AdvanceMeal> myAdvMealList = new List<AdvanceMeal>();
+            
             var table = dbM.Table<AdvanceMeal>();
 
             //Set the toolbar
@@ -54,6 +57,7 @@ namespace MealSelectorII.Droid
             Button delBtn = FindViewById<Button>(Resource.Id.delete_button);
 
             TextView myfeed = FindViewById<TextView>(Resource.Id.feed_result);
+
             Button feedMe = FindViewById<Button>(Resource.Id.feed_button);
 
             addBtn.Click += delegate 
@@ -116,8 +120,8 @@ namespace MealSelectorII.Droid
 
             feedMe.Click += delegate 
             {
-
                 Android.App.AlertDialog.Builder message = new Android.App.AlertDialog.Builder(this);
+
                 myAdvMealList.Clear();
 
                 string feed_Sort = feedSort.SelectedItem.ToString();
@@ -130,6 +134,7 @@ namespace MealSelectorII.Droid
                         {
                             AdvanceMeal myAdvMeal = new AdvanceMeal(item.Food, item.Sort);
                             myAdvMealList.Add(myAdvMeal);
+                            GetMeal();
                         }
                     }
                     else if (feed_Sort.Equals("Meat"))
@@ -138,12 +143,14 @@ namespace MealSelectorII.Droid
                         {
                             AdvanceMeal myAdvMeal = new AdvanceMeal(item.Food, item.Sort);
                             myAdvMealList.Add(myAdvMeal);
+                            GetMeal();
                         }
                     }
                     else if(feed_Sort.Equals("All"))
                     {
                         AdvanceMeal myAdvMeal = new AdvanceMeal(item.Food, item.Sort);
                         myAdvMealList.Add(myAdvMeal);
+                        GetMeal();
                     }
                     else
                     {
@@ -151,10 +158,11 @@ namespace MealSelectorII.Droid
                         message.SetMessage("Select a sort of the meal you prefer.");
                         message.SetNegativeButton("OK", (c, ev) => { });
                         message.Show();
+                        break;
                     }
                 }
 
-                int length = myAdvMealList.Count();
+                /*int length = myAdvMealList.Count();
 
                 if(length != 0)
                 {
@@ -170,8 +178,32 @@ namespace MealSelectorII.Droid
                     message.SetMessage("The list is empty, add some into your meal list..");
                     message.SetNegativeButton("OK", (c, ev) => { });
                     message.Show();
-                }
+                }*/
             };
+        }
+
+        public void GetMeal()
+        {
+            Android.App.AlertDialog.Builder message = new Android.App.AlertDialog.Builder(this);
+
+            TextView myfeed = FindViewById<TextView>(Resource.Id.feed_result);
+            int length = myAdvMealList.Count();
+
+            if (length != 0)
+            {
+                Random rand = new Random();
+                int randMeal = rand.Next(0, length);
+
+                myfeed.Text = "Your meal is " + myAdvMealList[randMeal].Food + " for today!";
+
+            }
+            else
+            {
+                message.SetTitle("Your don't have anything to eat..");
+                message.SetMessage("The list is empty, add some into your meal list..");
+                message.SetNegativeButton("OK", (c, ev) => { });
+                message.Show();
+            }
         }
 
 

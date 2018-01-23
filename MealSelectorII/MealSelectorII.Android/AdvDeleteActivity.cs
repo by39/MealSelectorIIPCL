@@ -20,7 +20,7 @@ namespace MealSelectorII.Droid
     public class AdvDeleteActivity : AppCompatActivity
     {
 
-        List<string> delAdvList = new List<string>();
+        List<AdvanceMeal> delAdvList = new List<AdvanceMeal>();
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -38,7 +38,7 @@ namespace MealSelectorII.Droid
             Spinner delSpinner = FindViewById<Spinner>(Resource.Id.del_spinner);
             ListView delList = FindViewById<ListView>(Resource.Id.adv_meal_list);
 
-            refreshList("all");
+            refreshList("All Category");
 
             delSpinner.ItemSelected += delegate 
             {
@@ -57,7 +57,7 @@ namespace MealSelectorII.Droid
             dbM.CreateTable<AdvanceMeal>();
             var table = dbM.Table<AdvanceMeal>();
 
-            string food = delAdvList[e.Position];
+            string food = delAdvList[e.Position].Food;
 
             Android.App.AlertDialog.Builder message = new Android.App.AlertDialog.Builder(this);
 
@@ -113,7 +113,7 @@ namespace MealSelectorII.Droid
                     if (item.Sort == "Vege")
                     {
                         AdvanceMeal myAdvMeal = new AdvanceMeal(item.Food, item.Sort);
-                        delAdvList.Add(myAdvMeal.Food);
+                        delAdvList.Add(myAdvMeal);
                     }
                 }
                 else if(sort == "Meat")
@@ -121,20 +121,18 @@ namespace MealSelectorII.Droid
                     if (item.Sort == "Meat")
                     {
                         AdvanceMeal myAdvMeal = new AdvanceMeal(item.Food, item.Sort);
-                        delAdvList.Add(myAdvMeal.Food);
+                        delAdvList.Add(myAdvMeal);
                     }
                 }
                 else
                 {
                     AdvanceMeal myAdvMeal = new AdvanceMeal(item.Food, item.Sort);
-                    delAdvList.Add(myAdvMeal.Food);
+                    delAdvList.Add(myAdvMeal);
                 }
             }
 
             ListView delList = FindViewById<ListView>(Resource.Id.adv_meal_list);
-
-            ArrayAdapter<string> adapter;
-            adapter = new ArrayAdapter<string>(this,Android.Resource.Layout.SimpleListItem1, delAdvList);
+            MyAdapter adapter = new MyAdapter(this, delAdvList);
             delList.Adapter = adapter;
         }
 

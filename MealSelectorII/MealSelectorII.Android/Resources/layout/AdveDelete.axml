@@ -18,11 +18,34 @@
         ads:adUnitId="ca-app-pub-3940256099942544/6300978111"
         ads:adSize="BANNER"
         android:layout_gravity="top" />
-    <Spinner
-        android:entries="@array/del_dropdown_arrays"
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="44.0dp"
-        android:id="@+id/del_spinner" />
+        android:layout_height="58.0dp"
+        android:id="@+id/linearLayout1"
+        android:weightSum="100">
+        <TextView
+            android:text="Meal"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="91.0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="60"
+            android:id="@+id/textView1"
+            android:textAlignment="center"
+            android:paddingLeft="@dimen/abc_text_size_display_1_material"
+            android:paddingTop="@dimen/abc_action_bar_icon_vertical_padding_material" />
+        <View
+            android:layout_width="71.0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:id="@+id/view1" />
+        <Spinner
+            android:entries="@array/del_dropdown_arrays"
+            android:id="@+id/del_spinner"
+            android:layout_width="170.5dp"
+            android:layout_weight="30"
+            android:layout_height="match_parent" />
+    </LinearLayout>
     <ListView
         android:minWidth="25px"
         android:minHeight="25px"

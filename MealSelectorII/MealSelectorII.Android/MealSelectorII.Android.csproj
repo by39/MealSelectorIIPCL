@@ -140,6 +140,7 @@
     <Compile Include="AdvDeleteActivity.cs" />
     <Compile Include="DeleteActivity.cs" />
     <Compile Include="MainActivity.cs" />
+    <Compile Include="MyAdapter.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -157,6 +158,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\AdveDelete.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ListTittle.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
