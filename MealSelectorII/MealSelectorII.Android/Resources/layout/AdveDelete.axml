@@ -29,20 +29,18 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:layout_width="91.0dp"
             android:layout_height="match_parent"
-            android:layout_weight="60"
+            android:layout_weight="50"
             android:id="@+id/textView1"
-            android:textAlignment="center"
-            android:paddingLeft="@dimen/abc_text_size_display_1_material"
-            android:paddingTop="@dimen/abc_action_bar_icon_vertical_padding_material" />
+            android:gravity="center" />
         <View
-            android:layout_width="71.0dp"
+            android:layout_width="46.0dp"
             android:layout_height="match_parent"
-            android:layout_weight="10"
+            android:layout_weight="20"
             android:id="@+id/view1" />
         <Spinner
             android:entries="@array/del_dropdown_arrays"
             android:id="@+id/del_spinner"
-            android:layout_width="170.5dp"
+            android:layout_width="114.5dp"
             android:layout_weight="30"
             android:layout_height="match_parent" />
     </LinearLayout>

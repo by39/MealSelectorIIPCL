@@ -12,12 +12,14 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_weight="50"
+        android:gravity="center"
         android:id="@+id/meal" />
     <TextView
         android:text="Medium Text"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
+        android:gravity="center"
         android:layout_weight="50"
         android:id="@+id/categ" />
 </LinearLayout>
